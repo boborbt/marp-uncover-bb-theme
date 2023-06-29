@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/*!
+ * Marp / Marpit Uncover theme
+ * Modified by Roberto Esposito
+ *
+ * @theme uncover-bb
+ * @author Yuki Hattori
+ *
+ * @auto-scaling true
+ * @size 16:9 1280px 720px
+ * @size 4:3 960px 720px
+ */
+section {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: "BM Hanna Air", Palatino, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  height: 720px;
+  justify-content: center;
+  line-height: 1.4;
+  padding: 30px 70px;
+  position: relative;
+  text-align: center;
+  width: 1280px;
+  word-wrap: break-word;
+  z-index: 0;
+  --color-background: #fdfcff;
+  --color-background-code: #f2f1f4;
+  --color-background-paginate: rgba(32, 34, 40, 0.05);
+  --color-foreground: #202228;
+  --color-highlight: #009dd5;
+  --color-highlight-hover: #087eaa;
+  --color-highlight-heading: #33b1dd;
+  --color-header: rgba(32, 34, 40, 0.4);
+  --color-header-shadow: rgba(253, 252, 255, 0.8);
+  --color-strong: red;
+  --color-markers: red;
+  --color-quotes: red;
+  --color-quotes-backround: rgba(255, 0, 0, 0.07);
+}
+section::after {
+  align-items: flex-end;
+  background: linear-gradient(-45deg, var(--color-background-paginate) 50%, transparent 50%);
+  background-size: cover;
+  color: var(--color-foreground);
+  display: flex;
+  font-size: 0.6em;
+  height: 80px;
+  justify-content: flex-end;
+  padding: 30px;
+  text-align: right;
+  text-shadow: 0 0 5px var(--color-background);
+  width: 80px;
+}
+section:where(:not(.invert)) {
+  /*
+
+  Colorbrewer theme
+  Original: https://github.com/mbostock/colorbrewer-theme (c) Mike Bostock <mike@ocks.org>
+  Ported by Fabrício Tavares de Oliveira
+
+  */
+}
+section:where(:not(.invert)) .hljs {
+  color: #000;
+  background: #fff;
+}
+section:where(:not(.invert)) .hljs-subst {
+  /* default */
+}
+section:where(:not(.invert)) .hljs-string,
+section:where(:not(.invert)) .hljs-meta,
+section:where(:not(.invert)) .hljs-symbol,
+section:where(:not(.invert)) .hljs-template-tag,
+section:where(:not(.invert)) .hljs-template-variable,
+section:where(:not(.invert)) .hljs-addition {
+  color: #756bb1;
+}
+section:where(:not(.invert)) .hljs-comment,
+section:where(:not(.invert)) .hljs-quote {
+  color: green;
+  font-style: italic;
+}
+section:where(:not(.invert)) .hljs-number,
+section:where(:not(.invert)) .hljs-regexp,
+section:where(:not(.invert)) .hljs-literal,
+section:where(:not(.invert)) .hljs-bullet,
+section:where(:not(.invert)) .hljs-link {
+  color: #31a354;
+}
+section:where(:not(.invert)) .hljs-deletion,
+section:where(:not(.invert)) .hljs-variable {
+  color: #88f;
+}
+section:where(:not(.invert)) .hljs-keyword {
+  font-weight: bold;
+  color: red;
+}
+section:where(:not(.invert)) .hljs-title {
+  color: rgb(66, 148, 247);
+}
+section:where(:not(.invert)) .hljs-name,
+section:where(:not(.invert)) .hljs-selector-tag,
+section:where(:not(.invert)) .hljs-section,
+section:where(:not(.invert)) .hljs-built_in,
+section:where(:not(.invert)) .hljs-doctag,
+section:where(:not(.invert)) .hljs-type,
+section:where(:not(.invert)) .hljs-tag,
+section:where(:not(.invert)) .hljs-selector-id,
+section:where(:not(.invert)) .hljs-selector-class,
+section:where(:not(.invert)) .hljs-strong {
+  color: --color-strong;
+}
+section:where(:not(.invert)) .hljs-emphasis {
+  font-style: italic;
+}
+section:where(:not(.invert)) .hljs-attribute {
+  color: #e6550d;
+}
+section:where(.invert) {
+  --color-background: #202228;
+  --color-background-code: #2b2d33;
+  --color-background-paginate: rgba(255, 255, 255, 0.05);
+  --color-foreground: #fff;
+  --color-highlight: #60d0f0;
+  --color-highlight-hover: #88dcf4;
+  --color-highlight-heading: #80d9f3;
+  --color-header: rgba(255, 255, 255, 0.4);
+  --color-header-shadow: rgba(32, 34, 40, 0.8);
+  --color-strong: red;
+  --color-markers: red;
+  --color-quotes: red;
+  --color-quotes-backround: rgba(255, 0, 0, 0.07);
+  /*
+    codepen.io Embed Theme
+    Author: Justin Perry <http://github.com/ourmaninamsterdam>
+    Original theme - https://github.com/chriskempson/tomorrow-theme
+  */
+}
+section:where(.invert) .hljs {
+  background: #222;
+  color: #fff;
+}
+section:where(.invert) .hljs-comment,
+section:where(.invert) .hljs-quote {
+  color: #777;
+}
+section:where(.invert) .hljs-variable,
+section:where(.invert) .hljs-template-variable,
+section:where(.invert) .hljs-tag,
+section:where(.invert) .hljs-regexp,
+section:where(.invert) .hljs-meta,
+section:where(.invert) .hljs-number,
+section:where(.invert) .hljs-built_in,
+section:where(.invert) .hljs-literal,
+section:where(.invert) .hljs-params,
+section:where(.invert) .hljs-symbol,
+section:where(.invert) .hljs-bullet,
+section:where(.invert) .hljs-link,
+section:where(.invert) .hljs-deletion {
+  color: #ab875d;
+}
+section:where(.invert) .hljs-section,
+section:where(.invert) .hljs-title,
+section:where(.invert) .hljs-name,
+section:where(.invert) .hljs-selector-id,
+section:where(.invert) .hljs-selector-class,
+section:where(.invert) .hljs-type,
+section:where(.invert) .hljs-attribute {
+  color: #9b869b;
+}
+section:where(.invert) .hljs-string,
+section:where(.invert) .hljs-keyword,
+section:where(.invert) .hljs-selector-tag,
+section:where(.invert) .hljs-addition {
+  color: #8f9c6c;
+}
+section:where(.invert) .hljs-emphasis {
+  font-style: italic;
+}
+section:where(.invert) .hljs-strong {
+  font-weight: bold;
+}
+section > *:first-child, section[data-header] > :nth-child(2) {
+  margin-top: 0;
+}
+section > *:last-child, section[data-footer] > :nth-last-child(2) {
+  margin-bottom: 0;
+}
+section p,
+section blockquote {
+  margin: 0 0 15px;
+}
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6 {
+  margin: 15px 0 30px;
+}
+section h1 strong,
+section h2 strong,
+section h3 strong,
+section h4 strong,
+section h5 strong,
+section h6 strong {
+  color: var(--color-strong);
+  font-weight: inherit;
+}
+section h1::part(auto-scaling),
+section h2::part(auto-scaling),
+section h3::part(auto-scaling),
+section h4::part(auto-scaling),
+section h5::part(auto-scaling),
+section h6::part(auto-scaling) {
+  max-height: 660px;
+}
+section h1 {
+  font-size: 2em;
+}
+section h2 {
+  font-size: 1.7em;
+}
+section h3 {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+section h4 {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+section h5 {
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+section h6 {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+section header,
+section footer {
+  color: var(--color-header);
+  font-size: 0.45em;
+  left: 70px;
+  letter-spacing: 1px;
+  position: absolute;
+  right: 70px;
+  text-shadow: 0 1px 0 var(--color-header-shadow);
+  z-index: 1;
+}
+section header {
+  top: 30px;
+}
+section footer {
+  bottom: 30px;
+}
+section a {
+  color: var(--color-highlight);
+  text-decoration: none;
+}
+section a:hover {
+  color: var(--color-highlight-hover);
+  text-decoration: underline;
+}
+section ul,
+section ol {
+  text-align: left;
+}
+section > ul,
+section > ol {
+  margin-bottom: 15px;
+}
+section code {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  letter-spacing: 0;
+}
+section > code,
+section *:not(pre) > code {
+  background: var(--color-background-code);
+  color: var(--color-foreground);
+  margin: -0.2em 0.2em 0.2em;
+  padding: 0.2em;
+}
+section pre {
+  --preserve-aspect-ratio: xMidYMid meet;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+  font-size: 70%;
+  line-height: 1.15;
+  margin: 15px 0 30px;
+  text-align: left;
+}
+section pre::part(auto-scaling) {
+  max-height: 570px;
+}
+section pre > code {
+  background: var(--color-background-code);
+  box-sizing: content-box;
+  color: var(--color-foreground);
+  display: block;
+  margin: 0 auto;
+  min-width: 456px;
+  padding: 0.4em 0.6em;
+}
+section[data-size="4:3"] pre > code {
+  min-width: 328px;
+}
+section table {
+  border-collapse: collapse;
+  margin: 0 auto 15px;
+}
+section table > thead > tr > td,
+section table > thead > tr > th,
+section table > tbody > tr > td,
+section table > tbody > tr > th {
+  padding: 0.15em 0.5em;
+}
+section table > thead > tr > td,
+section table > thead > tr > th {
+  border-bottom: 3px solid currentcolor;
+}
+section table > tbody > tr:not(:last-child) > td,
+section table > tbody > tr:not(:last-child) > th {
+  border-bottom: 1px solid currentcolor;
+}
+section blockquote {
+  font-size: 95%;
+  line-height: 1.3;
+  padding: 0 2em;
+  position: relative;
+  z-index: 0;
+}
+section blockquote::before, section blockquote::after {
+  content: url("./assets/uncover-quote.svg");
+  height: auto;
+  pointer-events: none;
+  position: absolute;
+  width: 1em;
+  z-index: -1;
+}
+section blockquote::before {
+  left: 0;
+  top: 0;
+}
+section blockquote::after {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+section blockquote > *:last-child {
+  margin-bottom: 0;
+}
+section mark {
+  color: var(--color-highlight);
+  background: transparent;
+}
+
+:root {
+  font-size: 28px;
+  text-align: left;
+}
+
+table {
+  font-size: 20px;
+}
+
+.small-text {
+  font-size: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content 1fr;
+  gap: 0px 20px;
+  grid-template-areas: "header header" "column1 column2";
+}
+
+.grid-1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: min-content 1fr;
+  gap: 0px 20px;
+  grid-template-areas: "header header" "column1 column2";
+}
+
+.header {
+  grid-area: header;
+}
+
+.column1 {
+  grid-area: column1;
+}
+
+.column2 {
+  grid-area: column2;
+}
+
+blockquote {
+  border-left: 5px solid var(--color-quotes);
+  border-right: 5px solid var(--color-quotes);
+  padding: 10px;
+  font-style: italic;
+  background-color: var(--color-quotes-backround);
+  border-radius: 10px;
+}
+
+blockquote::before {
+  content: "“";
+  font-size: 4em;
+  position: absolute;
+  top: -0.4em;
+  left: -0.6em;
+  padding-bottom: 0px;
+  color: var(--color-quotes);
+}
+
+.footnote {
+  border-top: 0.1em dashed #555;
+  font-size: 60%;
+  margin-top: auto;
+}
+
+ul {
+  position: relative;
+  left: 20px;
+  margin-top: 0.6em;
+  margin-bottom: 1em;
+}
+
+ul li::marker {
+  color: var(--color-markers);
+}
+
+ol li::marker {
+  color: var(--color-markers);
+}
+
+strong {
+  color: var(--color-strong);
+}
+
+.negative {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  text-align: center;
+  color: white;
+  background-color: rgb(255, 126, 121);
+  border-radius: 50%;
+}
+
+.positive {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  text-align: center;
+  color: white;
+  background-color: rgb(0, 150, 255);
+  border-radius: 50%;
+}
