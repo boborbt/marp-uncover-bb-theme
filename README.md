@@ -6,10 +6,12 @@ This theme is a modified version of the original `uncover` theme that is distrib
 
 ## Files provided
 
-This repository consists of only two files:
+The theme itself can be found in the themes folder:
 
 - theme.scss: this it the main source for your theme, any change should be made to this file
 - theme.css: this is the output of compiling the theme using sass. It is provided for convenience for anybody that would like to use the theme as is.
+
+An example of its usage can be found in the examples folder.
 
 ## Requirements
 
