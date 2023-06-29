@@ -4,7 +4,7 @@
  * Modified by Roberto Esposito
  *
  * @theme uncover-bb
- * @author Yuki Hattori
+ * @author Yuki Hattori, Roberto Esposito
  *
  * @auto-scaling true
  * @size 16:9 1280px 720px
@@ -462,4 +462,57 @@ strong {
   color: white;
   background-color: rgb(0, 150, 255);
   border-radius: 50%;
+}
+
+/* References */
+div.ref {
+  font-size: 70%;
+  text-align: left;
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
+  right: 10%;
+  padding-left: 1em;
+  text-indent: -0.7em;
+}
+
+span.label {
+  font-weight: bold;
+  color: red;
+}
+
+span.label::after {
+  color: black;
+  content: ":";
+}
+
+span.author {
+  font-style: italic;
+}
+
+span.author::after {
+  content: ",";
+}
+
+span.title {
+  font-weight: bold;
+}
+
+span.title::after {
+  content: ".";
+}
+
+/* span.noteref {
+  font-size: large;
+  vertical-align: super;
+} */
+.quoteref {
+  text-align: right;
+  font-size: large;
+}
+
+span.noteref {
+  color: red;
+  vertical-align: super;
+  font-size: 70%;
 }

@@ -11,13 +11,19 @@ This repository consists of only two files:
 - theme.scss: this it the main source for your theme, any change should be made to this file
 - theme.css: this is the output of compiling the theme using sass. It is provided for convenience for anybody that would like to use the theme as is.
 
+## Requirements
+
+- [sass](https://sass-lang.com/): only required if you plan to change the theme.
+- BM Hanna Air font: the theme switches to Palatino if BM Hanna Air is not installed.
+
 ## How to generate theme.css
 
-Generating `theme.css` is very easy (it requires [sass](https://sass-lang.com/)):
 
 ```bash
+cd themes
 sass --no-source-map theme.scss theme.css
 ```
+
 
 
 
