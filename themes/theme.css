@@ -516,9 +516,8 @@ span.noteref {
 .button {
   border: 4px solid red;
   background-color: red;
-  border-radius: 100px;
-  padding: 3px;
-  padding-top: 10px;
+  border-radius: 30px;
+  padding: 10px;
   text-align: center;
 }
 .button a {
