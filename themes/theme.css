@@ -12,6 +12,10 @@
  */
 section {
   background: var(--color-background);
+  background-image: url("./assets/logo.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: 1080px 0px;
   color: var(--color-foreground);
   display: flex;
   flex-flow: column nowrap;
@@ -514,10 +518,11 @@ span.noteref {
 }
 
 .button {
-  border: 4px solid red;
-  background-color: red;
-  border-radius: 30px;
+  border: 4px solid rgb(251, 119, 119);
+  background-color: rgb(251, 119, 119);
+  border-radius: 20px;
   padding: 10px;
+  padding-bottom: 0px;
   text-align: center;
 }
 .button a {
