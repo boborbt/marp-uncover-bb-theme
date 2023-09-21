@@ -204,6 +204,9 @@ section h4,
 section h5,
 section h6 {
   margin: 15px 0 30px;
+  font-family: "Red Hat Display", "EB Garamond", Palatino, "CMU Classical Serif", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+  font-style: italic;
 }
 section h1 strong,
 section h2 strong,
@@ -212,7 +215,7 @@ section h4 strong,
 section h5 strong,
 section h6 strong {
   color: var(--color-strong);
-  font-weight: inherit;
+  font-weight: lighter;
 }
 section h1::part(auto-scaling),
 section h2::part(auto-scaling),
