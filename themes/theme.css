@@ -314,6 +314,12 @@ section pre > code {
 section[data-size="4:3"] pre > code {
   min-width: 328px;
 }
+section .largefont table {
+  font-size: 1.5em;
+}
+section .normfont table {
+  font-size: 1.2em;
+}
 section table {
   border-collapse: collapse;
   margin: 0 auto 15px;
