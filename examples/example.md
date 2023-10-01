@@ -32,6 +32,38 @@ theme: uncover-bb
 
 ---
 
+# Two columns layout
+
+<div class="grid-container" style="grid-template-columns:1fr 1fr">
+
+<div class="column-1">
+    Two columns layout can be activated using the following html
+</div>
+
+<div class="column-2">
+
+    <div class="grid-container" style="grid-template-columns:1fr 1fr">
+
+        <div class="column-1">
+            content of the first column
+        </div>
+
+        <div class="column-2">
+            content of the second column
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+---
+
+
 # Bibliographic references
 
 Bibliographic labels appears as superscripts<span class="noteref">1</span>.
