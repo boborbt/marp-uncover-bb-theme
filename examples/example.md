@@ -18,7 +18,7 @@ theme: uncover-bb
 # List example
 
 - list item 1
-- list item 2
+- list itme 2
 
 # Numbered list example
 
@@ -27,8 +27,31 @@ theme: uncover-bb
 
 ---
 
+# Quotations
+
+<div class="grid-container" style="grid-template-columns:1fr 1fr">
+
+<div class="column-1">
+
 > Quotation example with reference attribution
 <div class="quoteref">Author: anonymous</div>
+
+</div>
+
+<div class="column-2">
+
+```markdown
+
+> Quotation example with reference attribution
+<div class="quoteref">Author: anonymous</div>
+
+```
+
+</div>
+
+</div>
+
+
 
 ---
 
@@ -37,22 +60,23 @@ theme: uncover-bb
 <div class="grid-container" style="grid-template-columns:1fr 1fr">
 
 <div class="column-1">
-    Two columns layout can be activated using the following html
+    Two columns layout can be activated using the html markup on the right.
 </div>
 
 <div class="column-2">
 
-    <div class="grid-container" style="grid-template-columns:1fr 1fr">
+```html
+<div class="grid-container" style="grid-template-columns:1fr 1fr">
 
-        <div class="column-1">
-            content of the first column
-        </div>
-
-        <div class="column-2">
-            content of the second column
-        </div>
+    <div class="column-1">
+        content of the first column
     </div>
 
+    <div class="column-2">
+        content of the second column
+    </div>
+</div>
+```
 </div>
 
 </div>
@@ -63,8 +87,13 @@ theme: uncover-bb
 
 ---
 
-
 # Bibliographic references
+
+
+<div class="grid-container" style="grid-template-columns:1fr 1fr">
+
+<div class="column-1">
+
 
 Bibliographic labels appears as superscripts<span class="noteref">1</span>.
 
@@ -76,6 +105,31 @@ Bibliographic labels appears as superscripts<span class="noteref">1</span>.
 2023
 </span>
 </div>
+
+</div>
+
+<div class="column-2">
+
+```html
+
+Bibliographic labels appears as superscripts<span class="noteref">1</span>.
+
+<div class="ref">
+<span class="label">1</span>
+<span class="author">Roberto Esposito</span>
+<span class="title">The corresponding bibliographic entry is displayed in the footnote.<span>
+<span class="year">
+2023
+</span>
+</div>
+
+```
+
+</div>
+
+</div>
+
+
 
 
 
