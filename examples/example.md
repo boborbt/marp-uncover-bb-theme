@@ -18,7 +18,7 @@ theme: uncover-bb
 # List example
 
 - list item 1
-- list itme 2
+- list item 2
 
 # Numbered list example
 
