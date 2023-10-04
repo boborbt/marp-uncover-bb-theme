@@ -483,8 +483,6 @@ div.ref {
   text-align: left;
   position: absolute;
   bottom: 10px;
-  left: 10%;
-  right: 10%;
   padding-left: 1em;
   text-indent: -0.7em;
 }
@@ -511,7 +509,7 @@ span.title {
   font-weight: bold;
 }
 
-span.title::after {
+span.title::after, span.year::after {
   content: ".";
 }
 
@@ -524,6 +522,10 @@ span.noteref {
   color: red;
   vertical-align: super;
   font-size: 70%;
+}
+
+span.editor::after {
+  content: ",";
 }
 
 .button {
