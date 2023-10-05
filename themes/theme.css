@@ -35,6 +35,7 @@ section {
   --color-background-paginate: rgba(32, 34, 40, 0.05);
   --color-foreground: #202228;
   --color-highlight: #009dd5;
+  --color-link: #009dd5;
   --color-highlight-hover: #087eaa;
   --color-highlight-heading: #33b1dd;
   --color-header: rgba(32, 34, 40, 0.4);
@@ -128,6 +129,7 @@ section:where(.invert) {
   --color-background-paginate: rgba(255, 255, 255, 0.05);
   --color-foreground: #fff;
   --color-highlight: #60d0f0;
+  --color-link: #60d0f0;
   --color-highlight-hover: #88dcf4;
   --color-highlight-heading: #80d9f3;
   --color-header: rgba(255, 255, 255, 0.4);
@@ -264,7 +266,7 @@ section footer {
   bottom: 30px;
 }
 section a {
-  color: var(--color-highlight);
+  color: var(--color-link);
   text-decoration: none;
 }
 section a:hover {
@@ -490,41 +492,34 @@ span.label {
   font-weight: bold;
   color: red;
 }
-
 span.label::after {
   color: black;
   content: ":";
 }
-
 span.author {
   font-style: italic;
 }
-
 span.author::after {
   content: ",";
 }
-
 span.title {
   font-weight: bold;
 }
-
 span.title::after, span.year::after {
   content: ".";
 }
-
-.quoteref {
-  text-align: right;
-  font-size: large;
-}
-
 span.noteref {
   color: red;
   vertical-align: super;
   font-size: 70%;
 }
-
 span.editor::after {
   content: ",";
+}
+
+.quoteref {
+  text-align: right;
+  font-size: large;
 }
 
 .button {
@@ -557,6 +552,9 @@ span.editor::after {
 .note blockquote {
   background: none;
   border: none;
+}
+.note blockquote a {
+  color: #00638e;
 }
 
 .note blockquote::before {
