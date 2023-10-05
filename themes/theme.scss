@@ -18,6 +18,7 @@
   --color-background-paginate: #{rgba($text, 0.05)};
   --color-foreground: #{$text};
   --color-highlight: #{$highlight};
+  --color-link: #{$highlight};
   --color-highlight-hover: #{color.mix($text, $highlight, 25%)};
   --color-highlight-heading: #{color.mix(#fff, $highlight, 20%)};
   --color-header: #{rgba($text, 0.4)};
@@ -298,7 +299,7 @@ section {
   }
 
   a {
-    color: var(--color-highlight);
+    color: var(--color-link);
     text-decoration: none;
 
     &:hover {
@@ -564,46 +565,51 @@ div.ref {
   text-indent: -0.7em;
 }
 
-span.label {
-  font-weight: bold;
-  color: red;
+span {
+  &.label {
+    font-weight: bold;
+    color: red;
+  }
+
+  &.label::after {
+    color: black;
+    content: ":"
+  }
+
+  &.author {
+    font-style: italic;
+  }
+
+  &.author::after {
+    content: ","
+  }
+
+  &.title {
+    font-weight: bold;
+  }
+
+  &.title::after,
+  &.year::after {
+    content: "."
+  }
+
+  &.noteref {
+    color: red;
+    vertical-align: super;
+    font-size: 70%;
+  }
+
+  &.editor::after {
+    content: ","
+  }
 }
 
-span.label::after {
-  color: black;
-  content: ":"
-}
-
-span.author {
-  font-style: italic;
-}
-
-span.author::after {
-  content: ","
-}
-
-span.title {
-  font-weight: bold;
-}
-
-span.title::after, span.year::after {
-  content: "."
-}
 
 .quoteref {
   text-align: right;
   font-size: large;
 }
 
-span.noteref {
-  color: red;
-  vertical-align: super;
-  font-size: 70%;
-}
-
-span.editor::after {
-  content: ","
-}
 
 .button {
   border: 4px solid rgb(251, 119, 119);
@@ -637,7 +643,12 @@ span.editor::after {
 .note blockquote {
   background: none;
   border: none;
+
+  a {
+    color: #00638e;
+  }
 }
+
 
 .note blockquote::before {
   content: "";
