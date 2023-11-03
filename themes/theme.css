@@ -267,7 +267,7 @@ section footer {
 }
 section a {
   color: var(--color-link);
-  text-decoration: none;
+  text-decoration: underline;
 }
 section a:hover {
   color: var(--color-highlight-hover);
