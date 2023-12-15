@@ -708,3 +708,8 @@ section.topic::after {
   color: white;
 }
 
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
