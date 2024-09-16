@@ -547,6 +547,7 @@ span.editor::after {
   border-radius: 10px;
   padding: 0px;
   background-color: rgba(0, 149, 255, 0.1);
+  margin-bottom: 0.5em;
 }
 
 .note blockquote {
