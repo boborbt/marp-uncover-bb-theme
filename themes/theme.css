@@ -437,6 +437,12 @@ blockquote::before {
   margin-top: auto;
 }
 
+span.footnoteref {
+  vertical-align: super;
+  color: red;
+  font-size: small;
+}
+
 ul {
   position: relative;
   left: 20px;
