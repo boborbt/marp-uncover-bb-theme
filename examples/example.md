@@ -33,8 +33,9 @@ theme: uncover-bb
 
 <div class="column-1">
 
-> Quotation example with reference attribution
-<div class="quoteref">Author: anonymous</div>
+> Quotation example with reference attribution. The reference can be added using the `<qref>` tag.
+
+<qref>Author: anonymous</qref>
 
 </div>
 
@@ -43,7 +44,7 @@ theme: uncover-bb
 ```markdown
 
 > Quotation example with reference attribution
-<div class="quoteref">Author: anonymous</div>
+<qref>Author: anonymous</qref>
 
 ```
 
@@ -112,10 +113,10 @@ Bibliographic labels appears as superscripts<span class="noteref">1</span>.
 
 ```html
 
-Bibliographic labels appears as superscripts<span class="noteref">1</span>.
+Bibliographic labels appears as superscripts<span class="noteref">2</span>.
 
 <div class="ref">
-<span class="label">1</span>
+<label>1</span>
 <span class="author">Roberto Esposito</span>
 <span class="title">The corresponding bibliographic entry is displayed in the footnote.<span>
 <span class="year">
@@ -128,6 +129,39 @@ Bibliographic labels appears as superscripts<span class="noteref">1</span>.
 </div>
 
 </div>
+
+---
+
+# Note boxes
+
+A note box can be created using the following syntax:
+
+```html
+
+<div class="note">
+> # Header note can be set using `#`
+> A note can be created using the `<div class="note">text
+</div>` tag.
+
+```
+
+**Note**: the quotation mark `>` is needed, and the `#` is used to create a header inside the note.
+
+<div class="note"> 
+
+> # Header note can be set using `#`
+> A note can be created using the `<div class="note">text</div>`
+
+</div>
+
+---
+
+# Simple special tags
+
+A few special tags are available to highlight some concepts.
+
+- A negative/positive "example" can be shown using the `<neg></neg>` <neg></neg> and the `<pos></pos>` <pos></pos> tags.
+- <box>A boxed text</box> can be created using the `<box>text</box>` tag.
 
 
 

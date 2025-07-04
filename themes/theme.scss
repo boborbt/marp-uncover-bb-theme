@@ -26,7 +26,7 @@
   --color-strong: #{$accent};
   --color-markers: #{$accent};
   --color-quotes: #{$accent};
-  --color-quotes-backround: #{rgba($accent, 0.07)};
+  --color-quotes-background: #{rgba($accent, 0.07)};
 }
 
 section {
@@ -525,7 +525,7 @@ strong {
   color: var(--color-strong);
 }
 
-.negative {
+.negative, neg {
   display: inline-block;
   width: 1em;
   height: 1em;  
@@ -536,7 +536,7 @@ strong {
   border-radius: 50%;
 }
 
-.positive {
+.positive, pos {
     display: inline-block;
     width: 1em;
     height: 1em;
@@ -559,47 +559,49 @@ div.ref {
   text-indent: -0.7em;
 }
 
-span {
-  &.label {
+span, ref {
+  &.label, &label {
     font-weight: bold;
     color: red;
   }
 
-  &.label::after {
+  &.label::after, &label::after {
     color: black;
     content: ":"
   }
 
-  &.author {
+  &.author, &author {
     font-style: italic;
   }
 
-  &.author::after {
+  &.author::after, &author.after {
     content: ","
   }
 
-  &.title {
+  &.title, &title {
     font-weight: bold;
   }
 
-  &.title::after,
-  &.year::after {
+  &.title::after, &title::after
+  &.year::after, &year::after {
     content: "."
   }
 
-  &.noteref {
+  &.noteref, noteref {
     color: red;
     vertical-align: super;
     font-size: 70%;
   }
 
-  &.editor::after {
+  &.editor::after, &editor::after {
     content: ","
   }
 }
 
 
-.quoteref {
+.quoteref,
+qref {
+  display: block;
   text-align: right;
   font-size: large;
 }
@@ -619,7 +621,7 @@ span {
   }
 }
 
-.boxed {
+.boxed, box {
   border: 4px solid black;
   border-radius: 5px;
   background-color: rgba(0, 149, 255, 0.516);

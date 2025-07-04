@@ -43,7 +43,7 @@ section {
   --color-strong: red;
   --color-markers: red;
   --color-quotes: red;
-  --color-quotes-backround: rgba(255, 0, 0, 0.07);
+  --color-quotes-background: rgba(255, 0, 0, 0.07);
 }
 section::after {
   align-items: flex-end;
@@ -137,7 +137,7 @@ section:where(.invert) {
   --color-strong: red;
   --color-markers: red;
   --color-quotes: red;
-  --color-quotes-backround: rgba(255, 0, 0, 0.07);
+  --color-quotes-background: rgba(255, 0, 0, 0.07);
   /*
     codepen.io Embed Theme
     Author: Justin Perry <http://github.com/ourmaninamsterdam>
@@ -456,7 +456,7 @@ strong {
   color: var(--color-strong);
 }
 
-.negative {
+.negative, neg {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -467,7 +467,7 @@ strong {
   border-radius: 50%;
 }
 
-.positive {
+.positive, pos {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -488,36 +488,38 @@ div.ref {
   text-indent: -0.7em;
 }
 
-span.label {
+span.label, spanlabel, ref.label, reflabel {
   font-weight: bold;
   color: red;
 }
-span.label::after {
+span.label::after, spanlabel::after, ref.label::after, reflabel::after {
   color: black;
   content: ":";
 }
-span.author {
+span.author, spanauthor, ref.author, refauthor {
   font-style: italic;
 }
-span.author::after {
+span.author::after, spanauthor.after, ref.author::after, refauthor.after {
   content: ",";
 }
-span.title {
+span.title, spantitle, ref.title, reftitle {
   font-weight: bold;
 }
-span.title::after, span.year::after {
+span.title::after, spantitle::after span.year::after, spanyear::after, ref.title::after, spantitle::after ref.year::after, refyear::after, reftitle::after span.year::after, reftitle::after ref.year::after {
   content: ".";
 }
-span.noteref {
+span.noteref, span noteref, ref.noteref, ref noteref {
   color: red;
   vertical-align: super;
   font-size: 70%;
 }
-span.editor::after {
+span.editor::after, spaneditor::after, ref.editor::after, refeditor::after {
   content: ",";
 }
 
-.quoteref {
+.quoteref,
+qref {
+  display: block;
   text-align: right;
   font-size: large;
 }
@@ -534,7 +536,7 @@ span.editor::after {
   color: white;
 }
 
-.boxed {
+.boxed, box {
   border: 4px solid black;
   border-radius: 5px;
   background-color: rgba(0, 149, 255, 0.516);
