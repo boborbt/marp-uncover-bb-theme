@@ -547,6 +547,18 @@ strong {
     border-radius: 50%;
 }
 
+chk:after {
+  color: green;
+  content: "✓";
+  font-weight: bold;
+}
+
+crs:after {
+  color: red;
+  content: "✗";
+  font-weight: bold;
+}
+
 /* References */
 
 

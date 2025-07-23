@@ -437,12 +437,6 @@ blockquote::before {
   margin-top: auto;
 }
 
-span.footnoteref {
-  vertical-align: super;
-  color: red;
-  font-size: small;
-}
-
 ul {
   position: relative;
   left: 20px;
@@ -482,6 +476,18 @@ strong {
   color: white;
   background-color: rgb(0, 150, 255);
   border-radius: 50%;
+}
+
+chk:after {
+  color: green;
+  content: "✓";
+  font-weight: bold;
+}
+
+crs:after {
+  color: red;
+  content: "✗";
+  font-weight: bold;
 }
 
 /* References */

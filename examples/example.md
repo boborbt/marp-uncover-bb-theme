@@ -156,13 +156,14 @@ A note box can be created using the following syntax:
 
 ---
 
-# Simple special tags
+# HTML tags and symbols
 
 A few special tags are available to highlight some concepts.
 
 - A negative/positive "example" can be shown using the `<neg></neg>` <neg></neg> and the `<pos></pos>` <pos></pos> tags.
 - <box>A boxed text</box> can be created using the `<box>text</box>` tag.
-
+- A check mark <chk></chk> can be added using the `<chk></chk>` tag.
+- A cross <crs></crs> can be added using the `<crs></crs>` tag.
 
 
 
