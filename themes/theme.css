@@ -31,19 +31,20 @@ section {
   word-wrap: break-word;
   z-index: 0;
   --color-background: #fdfcff;
-  --color-background-code: #f2f1f4;
+  --color-background-code: rgb(241.95, 241.1, 244.25);
   --color-background-paginate: rgba(32, 34, 40, 0.05);
   --color-foreground: #202228;
   --color-highlight: #009dd5;
   --color-link: #009dd5;
-  --color-highlight-hover: #087eaa;
-  --color-highlight-heading: #33b1dd;
+  --color-highlight-hover: rgb(8, 126.25, 169.75);
+  --color-highlight-heading: rgb(51, 176.6, 221.4);
   --color-header: rgba(32, 34, 40, 0.4);
   --color-header-shadow: rgba(253, 252, 255, 0.8);
   --color-strong: red;
   --color-markers: red;
   --color-quotes: red;
   --color-quotes-background: rgba(255, 0, 0, 0.07);
+  --color-box-background: rgba(0, 149, 255, 0.1);
 }
 section::after {
   align-items: flex-end;
@@ -125,19 +126,20 @@ section:where(:not(.invert)) .hljs-attribute {
 }
 section:where(.invert) {
   --color-background: #202228;
-  --color-background-code: #2b2d33;
+  --color-background-code: rgb(43.15, 45.05, 50.75);
   --color-background-paginate: rgba(255, 255, 255, 0.05);
   --color-foreground: #fff;
   --color-highlight: #60d0f0;
   --color-link: #60d0f0;
-  --color-highlight-hover: #88dcf4;
-  --color-highlight-heading: #80d9f3;
+  --color-highlight-hover: rgb(135.75, 219.75, 243.75);
+  --color-highlight-heading: rgb(127.8, 217.4, 243);
   --color-header: rgba(255, 255, 255, 0.4);
   --color-header-shadow: rgba(32, 34, 40, 0.8);
   --color-strong: red;
   --color-markers: red;
   --color-quotes: red;
   --color-quotes-background: rgba(255, 0, 0, 0.07);
+  --color-box-background: rgba(0, 149, 255, 0.1);
   /*
     codepen.io Embed Theme
     Author: Justin Perry <http://github.com/ourmaninamsterdam>
@@ -549,9 +551,9 @@ qref {
 }
 
 .boxed, box {
-  border: 4px solid black;
+  border: 1px dashed black;
   border-radius: 5px;
-  background-color: rgba(0, 149, 255, 0.516);
+  background-color: var(--color-box-background);
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -595,18 +597,16 @@ div.rule {
 
 section.digression {
   background-image: url("./assets/logo-digression.png");
-  background-color: #bdF;
-  border: 5px solid #47F;
+  background-color: var(--color-box-background);
+  border: 1px solid #47F;
   border-radius: 10px;
 }
-
+section.digression strong {
+  color: red;
+}
 section.digression h2 strong {
   color: #03A;
   font-weight: lighter;
-}
-
-section.digression strong {
-  color: #03A;
 }
 
 section.digression blockquote::before {
