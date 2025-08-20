@@ -504,6 +504,7 @@ div.ref {
 
 span.label, spanlabel, ref.label, reflabel {
   font-weight: bold;
+  vertical-align: super;
   color: red;
 }
 span.label::after, spanlabel::after, ref.label::after, reflabel::after {
@@ -631,17 +632,17 @@ section.topic {
   background-image: none;
   opacity: 1;
 }
-
+section.topic h1 {
+  color: orange;
+}
 section.topic strong {
   color: orange;
 }
-
 section.topic ul ul li {
   display: flex;
   align-items: top;
   padding: 0.5rem;
 }
-
 section.topic ul ul li::before {
   content: "▶";
   width: 1rem;
@@ -650,9 +651,12 @@ section.topic ul ul li::before {
   margin-top: 0.4rem;
   color: orange;
 }
-
 section.topic ul li::marker {
   color: orange;
+}
+section.topic .ref .label, section.topic .ref label {
+  color: orange;
+  vertical-align: super;
 }
 
 section.topic::after {

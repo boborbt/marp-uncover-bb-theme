@@ -575,6 +575,7 @@ div.ref {
 span, ref {
   &.label, &label {
     font-weight: bold;
+    vertical-align: super;
     color: red;
   }
 
@@ -719,30 +720,41 @@ section.topic {
   color: white;
   background-image: none;
   opacity:1.0;
-}
 
-section.topic strong {
-  color: orange;
-}
+  h1 {
+    color: orange;
+  }
 
-section.topic ul ul li {
-  display: flex;
-  align-items: top;
-  padding: .5rem
-}
+  strong {
+    color: orange;
+  }
 
-section.topic ul ul li::before {
-  content: "▶";
-  width: 1rem;
-  height: 1rem;
-  font-size: 10pt;
-  margin-top: .4rem;
-  color: orange;
-}
+  ul ul li {
+    display: flex;
+    align-items: top;
+    padding: .5rem
+  }
 
+  ul ul li::before {
+    content: "▶";
+    width: 1rem;
+    height: 1rem;
+    font-size: 10pt;
+    margin-top: .4rem;
+    color: orange;
+  }
 
-section.topic ul li::marker {
-  color:orange;
+  ul li::marker {
+    color: orange;
+  }
+
+  .ref {
+    .label,label {
+      color: orange;
+      vertical-align: super;
+    }
+    
+  }
 }
 
 section.topic::after {
