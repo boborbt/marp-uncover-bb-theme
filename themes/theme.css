@@ -632,6 +632,29 @@ section.topic {
   opacity: 1;
 }
 
+section.topic strong {
+  color: orange;
+}
+
+section.topic ul ul li {
+  display: flex;
+  align-items: top;
+  padding: 0.5rem;
+}
+
+section.topic ul ul li::before {
+  content: "▶";
+  width: 1rem;
+  height: 1rem;
+  font-size: 10pt;
+  margin-top: 0.4rem;
+  color: orange;
+}
+
+section.topic ul li::marker {
+  color: orange;
+}
+
 section.topic::after {
   color: white;
 }
