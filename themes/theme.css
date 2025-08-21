@@ -44,7 +44,7 @@ section {
   --color-markers: red;
   --color-quotes: red;
   --color-quotes-background: rgba(255, 0, 0, 0.07);
-  --color-box-background: rgba(0, 149, 255, 0.1);
+  --color-box-background: rgb(234, 243, 255);
 }
 section::after {
   align-items: flex-end;
@@ -139,7 +139,7 @@ section:where(.invert) {
   --color-markers: red;
   --color-quotes: red;
   --color-quotes-background: rgba(255, 0, 0, 0.07);
-  --color-box-background: rgba(0, 149, 255, 0.1);
+  --color-box-background: rgb(234, 243, 255);
   /*
     codepen.io Embed Theme
     Author: Justin Perry <http://github.com/ourmaninamsterdam>
