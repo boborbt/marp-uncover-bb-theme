@@ -49,10 +49,10 @@ section {
   --color-background-code: rgb(241.95, 241.1, 244.25);
   --color-background-paginate: rgba(32, 34, 40, 0.05);
   --color-foreground: #202228;
-  --color-highlight: #009dd5;
-  --color-link: #009dd5;
-  --color-highlight-hover: rgb(8, 126.25, 169.75);
-  --color-highlight-heading: rgb(51, 176.6, 221.4);
+  --color-highlight: #007dd3;
+  --color-link: #007dd3;
+  --color-highlight-hover: rgb(8, 102.25, 168.25);
+  --color-highlight-heading: rgb(51, 151, 219.8);
   --color-header: rgba(32, 34, 40, 0.4);
   --color-header-shadow: rgba(253, 252, 255, 0.8);
   --color-strong: red;
@@ -371,6 +371,7 @@ section blockquote > *:last-child {
 }
 section mark {
   color: var(--color-highlight);
+  font-weight: bold;
   background: transparent;
 }
 

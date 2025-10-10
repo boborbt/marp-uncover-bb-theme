@@ -12,7 +12,7 @@
  * @size 4:3 960px 720px
  */
 
-@mixin color-scheme($bg: #fdfcff, $text: #202228, $highlight: #009dd5, $accent: red) {
+@mixin color-scheme($bg: #fdfcff, $text: #202228, $highlight: #007dd3, $accent: red) {
   --color-background: #{$bg};
   --color-background-code: #{color.mix($bg, $text, 95%)};
   --color-background-paginate: #{rgba($text, 0.05)};
@@ -428,6 +428,7 @@ section {
 
   mark {
     color: var(--color-highlight);
+    font-weight: bold;
     background: transparent;
   }
 }
