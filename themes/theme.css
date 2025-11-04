@@ -568,6 +568,15 @@ qref {
   margin-bottom: 0.5em;
 }
 
+.note p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.note #text {
+  padding: 10px;
+}
+
 .note blockquote {
   background: none;
   border: none;
