@@ -682,3 +682,12 @@ img[alt~=center] {
   display: block;
   margin: 0 auto;
 }
+
+hr.footnotes-sep {
+  margin: 0em;
+  padding: 0em;
+}
+
+.footnote-item {
+  font-size: 68%;
+}
